@@ -15,7 +15,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-    <style>#map_0f975b2775bc4de1b52f599f9af3b0b5 {
+    <style>#map_7b4e355efc39490b973d0641b805c9d9 {
         position: relative;
         width: 100.0%;
         height: 100.0%;
@@ -26,7 +26,7 @@
 </head>
 <body>    
     
-    <div class="folium-map" id="map_0f975b2775bc4de1b52f599f9af3b0b5" ></div>
+    <div class="folium-map" id="map_7b4e355efc39490b973d0641b805c9d9" ></div>
 </body>
 <script>    
     
@@ -34,8 +34,8 @@
         var bounds = null;
     
 
-    var map_0f975b2775bc4de1b52f599f9af3b0b5 = L.map(
-        'map_0f975b2775bc4de1b52f599f9af3b0b5', {
+    var map_7b4e355efc39490b973d0641b805c9d9 = L.map(
+        'map_7b4e355efc39490b973d0641b805c9d9', {
         center: [19.118413, 73.030031],
         zoom: 6,
         maxBounds: bounds,
@@ -47,7 +47,7 @@
 
     
     
-    var tile_layer_c083c9608cd14205a2d4f90afa78f35a = L.tileLayer(
+    var tile_layer_74466ff0a1e44ef1b51c601cdd75b881 = L.tileLayer(
         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
         {
         "attribution": null,
@@ -57,5 +57,43 @@
         "minZoom": 0,
         "noWrap": false,
         "subdomains": "abc"
-}).addTo(map_0f975b2775bc4de1b52f599f9af3b0b5);
+}).addTo(map_7b4e355efc39490b973d0641b805c9d9);
+    
+            var feature_group_8bae987d30024532922ee167fcd96351 = L.featureGroup(
+                ).addTo(map_7b4e355efc39490b973d0641b805c9d9);
+        
+    
+        var marker_0b0510aba17b4600b7ff75aff64f866e = L.marker(
+            [19.025414, 73.025255],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8bae987d30024532922ee167fcd96351);
+        
+    
+
+                var icon_0ecef9018835433bb60846f7f61798a3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b0510aba17b4600b7ff75aff64f866e.setIcon(icon_0ecef9018835433bb60846f7f61798a3);
+            
+    
+            var popup_83d0a1fc8a12421cb43f1abb685faf41 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fc1ed6e216f842fa8b5daef10a2890e9 = $('<div id="html_fc1ed6e216f842fa8b5daef10a2890e9" style="width: 100.0%; height: 100.0%;">Wonders Park</div>')[0];
+                popup_83d0a1fc8a12421cb43f1abb685faf41.setContent(html_fc1ed6e216f842fa8b5daef10a2890e9);
+            
+
+            marker_0b0510aba17b4600b7ff75aff64f866e.bindPopup(popup_83d0a1fc8a12421cb43f1abb685faf41)
+            ;
+
+            
+        
 </script>
