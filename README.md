@@ -3,6 +3,8 @@
 
 ### This project represents the demographics of Airports in India using folium and pandas
 
+#### You can view the airports by their size and click on the marker to view the name of the airport, click on the name to view the wikipedia page if available
+
 ### Get started
 
 ```
