@@ -1,22 +1,23 @@
 import folium
 import pandas
 
-data = pandas.read_csv("airports-in-india.csv")
 
+data = pandas.read_csv("airports-in-india.csv")
 lat = list(data["latitude_deg"])
 lon = list(data["longitude_deg"])
 name = list(data["name"])
 wiki = list(data["wikipedia_link"])
 typ = list(data["type"])
 
-def color_producer(typ):
-    if str(typ) == 'large_airport':
+
+def color_producer(tp):
+    if str(tp) == 'large_airport':
         return "black"
-    elif str(typ) == 'medium_airport':
+    elif str(tp) == 'medium_airport':
         return "gray"
-    elif str(typ) == 'small_airport':
+    elif str(tp) == 'small_airport':
         return "lightgray"
-    elif str(typ) == 'closed':
+    elif str(tp) == 'closed':
         return "white"
     else:
         return "darkpurple"
